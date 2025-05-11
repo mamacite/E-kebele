@@ -1,0 +1,119 @@
+/* idRegister.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.id-register {
+    padding: 30px;
+    background-color: #ffffff; /* White background for the form */
+    max-width: 600px;
+    margin: 50px auto; /* Center the form with top margin */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    font-size: 26px;
+    color: #4CAF50; /* Logo color */
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500; /* Slightly bolder */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+.registration-form {
+    display: flex;
+    flex-wrap: wrap; /* Allows the fields to wrap into the next line */
+    justify-content: space-between; /* Space between columns */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 48%; /* Adjust width to fit two columns */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block; /* Ensures label takes full width */
+    color: #333; /* Darker color for better readability */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px; /* More padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="file"] {
+    border: none;
+    padding: 0;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform for a subtle effect */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset on click */
+}

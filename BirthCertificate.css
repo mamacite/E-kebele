@@ -1,0 +1,72 @@
+/* birth-certificate.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.birth-certificate {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px; /* Increased padding for a spacious look */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.birth-certificate h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Title color */
+}
+
+.birth-certificate form {
+    display: flex;
+    flex-direction: column;
+}
+
+.birth-certificate label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text for readability */
+}
+
+.birth-certificate input[type="text"],
+.birth-certificate input[type="date"],
+.birth-certificate select {
+    padding: 12px; /* More padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 16px; /* Consistent font size */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+.birth-certificate input[type="text"]:focus,
+.birth-certificate input[type="date"]:focus,
+.birth-certificate select:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.birth-certificate button {
+    padding: 12px; /* Increased padding for buttons */
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Consistent font size */
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for hover effect */
+}
+
+.birth-certificate button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.birth-certificate button:active {
+    transform: translateY(0); /* Reset on click */
+}
